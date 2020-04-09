@@ -21,9 +21,9 @@ public class Colocviu1_245SecondaryActivity extends AppCompatActivity {
             finalSum += Integer.parseInt(num);
         }
 
-        Intent intentToParent = new Intent();
-        intentToParent.putExtra("Sum", finalSum);
-        setResult(RESULT_OK, intentToParent);
+        Intent intentToMain = new Intent();
+        intentToMain.putExtra("Sum", finalSum);
+        setResult(RESULT_OK, intentToMain);
         finish();
     }
 }

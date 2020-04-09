@@ -55,8 +55,7 @@ public class Colocviu1_245MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
         super.onActivityResult(requestCode, resultCode, intent);
-        if (requestCode == 1) {
-            Toast.makeText(this, "The activity returned with result " + resultCode, Toast.LENGTH_LONG).show();
-        }
+        int result = intent.getIntExtra("Sum", 0);
+        Toast.makeText(this, "The activity returned with result " + result, Toast.LENGTH_LONG).show();
     }
 }
